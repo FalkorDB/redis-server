@@ -25,7 +25,7 @@ eventNotifier* createEventNotifier(void) {
     if (!en) return NULL;
 
 #ifdef HAVE_EVENT_FD
-    if ((en->efd = eventfd(0, EFD_NONBLOCK| EFD_CLOEXEC)) != -1) {
+    if ((en->efd = eventfd(0, EFD_NONBLOCK | EFD_CLOEXEC)) != -1) {
         return en;
     }
 #else
