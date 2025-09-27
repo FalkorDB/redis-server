@@ -1,4 +1,4 @@
-/* endinconv.c -- Endian conversions utilities.
+/* endianconv.c -- Endian conversions utilities.
  *
  * This functions are never called directly, but always using the macros
  * defined into endianconv.h, this way we define everything is a non-operation
